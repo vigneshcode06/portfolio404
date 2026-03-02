@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- Meta Tags for Verification and SEO -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="google9dbb3f09686199a0.html" />
-    
     <!-- SEO Meta Description & Keywords -->
-    <meta name="description" content="Official website of Vignesh Hacker. Ethical Hacker, Cybersecurity Enthusiast, and Full-Stack Web Developer. Explore my hacking projects, blogs, tools, and services.">
-    <meta name="keywords" content="Vignesh Hacker, Ethical Hacker, Cybersecurity, Zeal Ninja, Penetration Tester, Web Developer, DevSecOps, Bug Bounty, Linux, PHP, Full Stack Developer, Cyber Hacker">
+    <meta name="description"
+        content="Official website of Vignesh Hacker. Ethical Hacker, Cybersecurity Enthusiast, and Full-Stack Web Developer. Explore my hacking projects, blogs, tools, and services.">
+    <meta name="keywords"
+        content="Vignesh Hacker, Ethical Hacker, Cybersecurity, Zeal Ninja, Penetration Tester, Web Developer, DevSecOps, Bug Bounty, Linux, PHP, Full Stack Developer, Cyber Hacker">
     <meta name="author" content="Vignesh Hacker">
 
     <!-- Open Graph for Social Media -->
     <meta property="og:title" content="Vignesh Hacker | Ethical Hacker & Web Developer">
-    <meta property="og:description" content="Vignesh Hacker - Cybersecurity Enthusiast & Full-Stack Web Engineer. Discover my work, hacking tools, projects, and contact details.">
+    <meta property="og:description"
+        content="Vignesh Hacker - Cybersecurity Enthusiast & Full-Stack Web Engineer. Discover my work, hacking tools, projects, and contact details.">
     <meta property="og:image" content="https://vignesh.zeal.ninja/assets/prof.jpg">
     <meta property="og:url" content="https://vignesh.zeal.ninja/">
     <meta property="og:type" content="website">
@@ -21,7 +20,8 @@
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Vignesh Hacker | Ethical Hacker & Developer">
-    <meta name="twitter:description" content="Follow Vignesh Hacker - Cybersecurity Enthusiast & Web Engineer. Explore my hacking projects, tools, and blogs.">
+    <meta name="twitter:description"
+        content="Follow Vignesh Hacker - Cybersecurity Enthusiast & Web Engineer. Explore my hacking projects, tools, and blogs.">
     <meta name="twitter:image" content="https://vignesh.zeal.ninja/assets/prof.jpg">
 
     <!-- Title & Favicon -->
@@ -31,386 +31,488 @@
     <!-- Fonts and Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Poppins:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="assets/style.css" />
 </head>
 
-
 <body>
-    <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">V<span class="accent">.</span></span>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+
+    <!-- Canvas for Three.js -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-logo">
+            <span class="logo-bracket">&lt;</span>
+            <span class="logo-name">Vignesh</span>
+            <span class="logo-slash">/</span>
+            <span class="logo-name2">Hacker</span>
+            <span class="logo-bracket">&gt;</span>
         </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+            <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+            <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+            <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+            <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-name"><span class="name-text">Vignesh</span></h1>
-                    <p class="hero-tagline">
-                        <span class="tagline-part">Cybersecurity Enthusiast</span> |
-                        <span class="tagline-part">Ethical Hacker</span> |
-                        <span class="tagline-part">Web Engineer</span>
-                    </p>
-                    <div class="hero-buttons">
-                        <button class="cta-button" onclick="scrollToSection('about')">
-                            <span>Explore My World</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </button>
+    <section id="hero" class="section hero-section">
+        <div class="hero-content">
+            <!-- <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for work
+            </div> -->
+            <h1 class="hero-title">
+                <span class="title-line">Hi, I'm</span>
+                <span class="title-name gradient-text" id="typed-name">Vignesh</span>
+            </h1>
+            <div class="hero-roles">
+                <span class="role-prefix">I build</span>
+                <span class="role-text" id="role-rotator">Full-Stack Apps</span>
+            </div>
+            <p class="hero-desc">
+                Cybersecurity Enthusiast &amp; Ethical Hacker.<br />
+                Full-Stack Web Engineer building secure digital products.<br />
+                I don't just build apps — I <strong>secure</strong> them.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+            </div>
+
+
+        </div>
+        <div class="hero-visual">
+            <div class="floating-card card-1">
+                <div class="card-icon">🛡️</div>
+                <div class="card-text">Ethical Hacker</div>
+            </div>
+            <div class="floating-card card-2">
+                <div class="card-icon">🔐</div>
+                <div class="card-text">Penetration Tester</div>
+            </div>
+            <div class="floating-card card-3">
+                <div class="card-icon">⚡</div>
+                <div class="card-text">Web Engineer</div>
+            </div>
+            <div class="reactor-container">
+                <div class="reactor-core">
+                    <div class="core-outer-ring">
+                        <div class="core-grates"></div>
+                        <div class="metal-plates">
+                            <div class="plate" style="transform: rotate(18deg) translateY(-88px)"></div>
+                            <div class="plate" style="transform: rotate(54deg) translateY(-88px)"></div>
+                            <div class="plate" style="transform: rotate(90deg) translateY(-88px)"></div>
+                            <div class="plate" style="transform: rotate(126deg) translateY(-88px)"></div>
+                            <div class="plate" style="transform: rotate(162deg) translateY(-88px)"></div>
+                            <div class="plate" style="transform: rotate(198deg) translateY(-88px)"></div>
+                            <div class="plate" style="transform: rotate(234deg) translateY(-88px)"></div>
+                            <div class="plate" style="transform: rotate(270deg) translateY(-88px)"></div>
+                            <div class="plate" style="transform: rotate(306deg) translateY(-88px)"></div>
+                            <div class="plate" style="transform: rotate(342deg) translateY(-88px)"></div>
+                        </div>
+                        <div class="copper-coils">
+                            <div class="coil" style="transform: rotate(0deg) translateY(-88px)"></div>
+                            <div class="coil" style="transform: rotate(36deg) translateY(-88px)"></div>
+                            <div class="coil" style="transform: rotate(72deg) translateY(-88px)"></div>
+                            <div class="coil" style="transform: rotate(108deg) translateY(-88px)"></div>
+                            <div class="coil" style="transform: rotate(144deg) translateY(-88px)"></div>
+                            <div class="coil" style="transform: rotate(180deg) translateY(-88px)"></div>
+                            <div class="coil" style="transform: rotate(216deg) translateY(-88px)"></div>
+                            <div class="coil" style="transform: rotate(252deg) translateY(-88px)"></div>
+                            <div class="coil" style="transform: rotate(288deg) translateY(-88px)"></div>
+                            <div class="coil" style="transform: rotate(324deg) translateY(-88px)"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="hero-visual">
-                    <div class="code-animation">
-                        <div class="code-line"><span class="code-keyword">const</span> <span class="code-variable">hacker</span> = <span class="code-string">"ethical"</span></div>
-                        <div class="code-line"><span class="code-keyword">function</span> <span class="code-function">secureWorld</span>() {</div>
-                        <div class="code-line code-indent"><span class="code-keyword">return</span> <span class="code-string">"peace"</span></div>
-                        <div class="code-line">}</div>
-                    </div>
+                    <div class="core-center-ring"></div>
+                    <div class="core-light"></div>
                 </div>
             </div>
-            <div class="scroll-indicator">
-                <i class="fas fa-chevron-down"></i>
+            <div class="hero-code-snippet">
+                <div class="code-line"><span class="ck">const</span> <span class="cv">hacker</span> = <span
+                        class="cs">"ethical"</span></div>
+                <div class="code-line"><span class="ck">function</span> <span class="cf">secureWorld</span>() {</div>
+                <div class="code-line code-indent"><span class="ck">return</span> <span class="cs">"peace"</span></div>
+                <div class="code-line">}</div>
             </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <!-- <span>Scroll</span> -->
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="section about-section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <div class="section-divider"></div>
-            </div>
-            <div class="about-content">
-                <p class="about-description">
-                    I'm a passionate ethical hacker and developer who thrives on creating innovative solutions and securing digital landscapes. I love bug bounty hunting, security research, and building powerful tools like <strong>ZeroTrace</strong>.
-                </p>
-                <div class="about-highlights">
-                  
-                    <div class="highlight-item"><i class="fas fa-code"></i> Full-Stack Developer</div>
-                    <div class="highlight-item"><i class="fas fa-flask"></i> Security Researcher</div>
-                    <div class="highlight-item"><i class="fas fa-tools"></i> Tool Creator</div>
+            <div class="section-label">01 — About</div>
+            <h2 class="section-title">The person behind the code</h2>
+            <div class="about-grid">
+                <div class="about-visual">
+                    <div class="about-card-3d" id="about-card">
+                        <div class="about-img-placeholder">
+                            <div class="img-inner">
+                                <div class="hologram-container">
+                                    <div class="hologram-head">
+                                        <div class="hologram-hood"></div>
+                                        <div class="hologram-face">
+                                            <div class="hologram-mask"></div>
+                                            <div class="hologram-eyes">
+                                                <div class="eye eye-left"></div>
+                                                <div class="eye eye-right"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hologram-glow"></div>
+                                    <div class="hologram-lines"></div>
+                                </div>
+                                <div class="img-text">Vignesh</div>
+                                <div class="img-sub">Hacker + Web Engineer</div>
+                            </div>
+                            <div class="card-glow"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a passionate <strong>Ethical Hacker</strong> and <strong>Full-Stack Web Developer</strong>
+                        who thrives on creating innovative solutions and securing digital landscapes.
+                    </p>
+                    <p class="about-body">
+                        I love bug bounty hunting, security research, and building powerful tools like
+                        <strong style="color:var(--acc2)">ZeroTrace</strong>. I write code knowing exactly how it can
+                        be exploited — and I make sure it can't be.
+                    </p>
+                    <div class="about-tags">
+                        <span class="tag">Ethical Hacker</span>
+                        <span class="tag">Bug Bounty</span>
+                        <span class="tag">Security Research</span>
+                        <span class="tag">Tool Creator</span>
+                        <span class="tag">Open Source</span>
+                    </div>
+                    <div class="about-actions">
+                        <!-- <a href="#" class="btn btn-primary btn-sm">Download CV</a> -->
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-  <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section id="skills" class="section skills-section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Technical Skills</h2>
-                <div class="section-divider"></div>
-            </div>
+            <div class="section-label">02 — Skills</div>
+            <h2 class="section-title">My tech arsenal</h2>
             <div class="skills-grid">
-                <div class="skill-category">
-                    <h3 class="category-title">Full Stack Development</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <i class="fab fa-html5"></i>
-                            <span>HTML</span>
+
+                <div class="skill-card" data-delay="0">
+                    <div class="skill-header">
+                        <div class="skill-icon dev-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <polyline points="16 18 22 12 16 6" stroke="currentColor" stroke-width="2" />
+                                <polyline points="8 6 2 12 8 18" stroke="currentColor" stroke-width="2" />
+                            </svg>
                         </div>
-                        <div class="skill-item">
-                            <i class="fab fa-css3-alt"></i>
-                            <span>CSS</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-js-square"></i>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-php"></i>
-                            <span>PHP</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <span>MySQL</span>
-                        </div>
-                        <!-- <div class="skill-item">
-                            <i class="fas fa-leaf"></i>
-                            <span>MongoDB</span>
-                        </div> -->
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <span>Python3</span>
-                        </div>
+                        <h3>Full Stack Development</h3>
                     </div>
+                    <ul class="skill-list">
+                        <li><span class="skill-name">HTML / CSS</span></li>
+                        <li><span class="skill-name">JavaScript</span></li>
+                        <li><span class="skill-name">PHP</span></li>
+                        <li><span class="skill-name">MySQL</span></li>
+                        <li><span class="skill-name">Python</span></li>
+                    </ul>
                 </div>
-                <div class="skill-category">
-                    <h3 class="category-title">DevOps & Tools</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <i class="fab fa-docker"></i>
-                            <span>Docker</span>
-                        </div>
-                        <!-- <div class="skill-item">
-                            <i class="fas fa-cogs"></i>
-                            <span>Jenkins</span>
-                        </div> -->
-                        <div class="skill-item">
-                            <i class="fas fa-sync-alt"></i>
-                            <span>CI/CD</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-linux"></i>
-                            <span>Linux</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub/GitLab</span>
-                        </div>
-                       
 
-                        <div class="skill-item">
-    <i class="fab fa-aws"></i>
-    <span>AWS</span>
-</div>
-
-
-
+                <div class="skill-card" data-delay="100">
+                    <div class="skill-header">
+                        <div class="skill-icon cloud-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" stroke="currentColor"
+                                    stroke-width="2" />
+                            </svg>
+                        </div>
+                        <h3>DevOps & Tools</h3>
                     </div>
+                    <ul class="skill-list">
+                        <li><span class="skill-name">Docker</span></li>
+                        <li><span class="skill-name">Linux</span></li>
+                        <li><span class="skill-name">CI/CD Pipelines</span></li>
+                        <li><span class="skill-name">GitHub & GitLab</span></li>
+                        <li><span class="skill-name">AWS</span></li>
+                    </ul>
                 </div>
-                <div class="skill-category">
-                    <h3 class="category-title">Ethical Hacking</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <i class="fab fa-linux"></i>
-                            <span>Linux</span>
+
+                <div class="skill-card" data-delay="200">
+                    <div class="skill-header">
+                        <div class="skill-icon sec-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor"
+                                    stroke-width="2" />
+                            </svg>
                         </div>
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <span>Python3</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-terminal"></i>
-                            <span>Bash</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-network-wired"></i>
-                            <span>Networking</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-bug"></i>
-                            <span>Vulnerability Assessment</span>
-                        </div>
+                        <h3>Ethical Hacking</h3>
                     </div>
+                    <ul class="skill-list">
+                        <li><span class="skill-name">Linux </span></li>
+                        <li><span class="skill-name">Python / Bash</span></li>
+                        <li><span class="skill-name">Networking</span></li>
+                        <li><span class="skill-name">Vulnerability Research & Assessment</span></li>
+                        <li><span class="skill-name">Web App Testing (OWASP Top 10)</span></li>
+                        <li><span class="skill-name">Custom Security Tool Development</span></li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Tech Ticker -->
+            <div class="tech-ticker">
+                <div class="ticker-track">
+                    <span>HTML</span><span>•</span><span>CSS</span><span>•</span><span>JavaScript</span><span>•</span>
+                    <span>PHP</span><span>•</span><span>Python</span><span>•</span><span>MySQL</span><span>•</span>
+                    <span>Docker</span><span>•</span><span>Linux</span><span>•</span><span>Kali
+                        Linux</span><span>•</span>
+                    <span>GitHub</span><span>•</span><span>AWS</span><span>•</span><span>Bash</span><span>•</span>
+                    <span>Networking</span><span>•</span><span>Burp
+                        Suite</span><span>•</span><span>CI/CD</span><span>•</span>
+                    <span>HTML</span><span>•</span><span>CSS</span><span>•</span><span>JavaScript</span><span>•</span>
+                    <span>PHP</span><span>•</span><span>Python</span><span>•</span><span>MySQL</span><span>•</span>
+                    <span>Docker</span><span>•</span><span>Linux</span><span>•</span><span>Kali
+                        Linux</span><span>•</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="projects" class="section projects-section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Featured Projects</h2>
-                <div class="section-divider"></div>
-            </div>
+            <div class="section-label">03 — Projects</div>
+            <h2 class="section-title">Things I've built</h2>
             <div class="projects-grid">
-                <div class="project-card">
+
+                <div class="project-card featured" data-tilt>
                     <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-blog"></i>
-                        </div>
-                        <h3 class="project-title">BlueVerse</h3>
-                    </div>
-                    <div class="project-content">
-                        <p class="project-description">
-                            A comprehensive blog platform featuring user authentication, profile management, and personalized content creation. Built with modern web technologies and secure backend architecture.
-                        </p>
-                        <div class="project-features">
-                            <span class="feature-tag">User Authentication</span>
-                            <span class="feature-tag">Profile Management</span>
-                            <span class="feature-tag">Content Creation</span>
-                            <span class="feature-tag">Responsive Design</span>
+                        <div class="project-badges">
+                            <span class="project-badge featured-badge">Featured</span>
+                            <span class="project-badge dev-badge">Web App</span>
                         </div>
                         <div class="project-links">
-                            <!-- <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                                <span>Live Demo</span>
-                            </a> -->
-                            <a href="https://github.com/vigneshcode06/BlueVerse" class="project-link">
-                                <i class="fab fa-github"></i>
-                                <span>Source Code</span>
+                            <a href="https://github.com/vigneshcode06/BlueVerse" target="_blank" title="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
                             </a>
                         </div>
+                    </div>
+                    <h3 class="project-title">BlueVerse — Blog Platform</h3>
+                    <p class="project-desc">A comprehensive blog platform featuring user authentication, profile
+                        management, and personalized content creation. Built with modern web technologies and a secure
+                        backend architecture.</p>
+                    <div class="project-tech">
+                        <span>User Auth</span><span>Profile Mgmt</span><span>PHP</span><span>MySQL</span>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-tilt>
                     <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-user-secret"></i>
-                        </div>
-                        <h3 class="project-title">ShadowSSH</h3>
-                    </div>
-                    <div class="project-content">
-                        <p class="project-description">
-                           A powerful and deceptive Python-based honeypot designed to simulate an SSH server. This tool helps security enthusiasts, ethical hackers, and researchers analyze unauthorized access attempts and gather intelligence on malicious activities.
-                        </p>
-                        <div class="project-features">
-                            <span class="feature-tag">Security Testing</span>
-                            <!-- <span class="feature-tag">Privacy Tools</span> -->
-                            <span class="feature-tag">Educational</span>
-                            <span class="feature-tag">Python</span>
+                        <div class="project-badges">
+                            <span class="project-badge sec-badge">Security Tool</span>
                         </div>
                         <div class="project-links">
-                            <!-- <a href="https://github.com/vigneshcode06/ShadowSSH" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                                <span>Live Demo</span>
-                            </a> -->
-                            <a href="https://github.com/vigneshcode06/ShadowSSH" class="project-link">
-                                <i class="fab fa-github"></i>
-                                <span>Source Code</span>
+                            <a href="https://github.com/vigneshcode06/ShadowSSH" target="_blank" title="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
                             </a>
                         </div>
+                    </div>
+                    <h3 class="project-title">ShadowSSH — SSH Honeypot</h3>
+                    <p class="project-desc">A powerful Python-based honeypot simulating an SSH server. Helps ethical
+                        hackers and security researchers analyze unauthorized access attempts and gather threat
+                        intelligence.</p>
+                    <div class="project-tech">
+                        <span>Python</span><span>Security Testing</span><span>Threat Intel</span>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-tilt>
                     <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <h3 class="project-title">DevSec-Lab</h3>
-                    </div>
-                    <div class="project-content">
-                        <p class="project-description">
-                            A virtual hacking laboratory built with Docker and PHP, providing a safe and controlled environment for cybersecurity education and penetration testing practice.
-                        </p>
-                        <div class="project-features">
-                            <span class="feature-tag">Docker</span>
-                            <span class="feature-tag">PHP</span>
-                            <span class="feature-tag">Virtual Lab</span>
-                            <span class="feature-tag">Security Training</span>
+                        <div class="project-badges">
+                            <span class="project-badge sec-badge">Security Lab</span>
+                            <span class="project-badge dev-badge">DevOps</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://vlabs.zeal.ninja/" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                                <span>Live Demo</span>
+                            <a href="https://github.com/vigneshcode06/DevSecLab" target="_blank" title="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
                             </a>
-                            <a href="https://github.com/vigneshcode06/DevSecLab" class="project-link">
-                                <i class="fab fa-github"></i>
-                                <span>Source Code</span>
+                            <a href="https://vlabs.zeal.ninja/" target="_blank" title="Live Demo">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
                             </a>
                         </div>
                     </div>
+                    <h3 class="project-title">DevSec-Lab — Virtual Hacking Lab</h3>
+                    <p class="project-desc">A virtual hacking laboratory built with Docker and PHP, providing a safe and
+                        controlled environment for cybersecurity education and penetration testing practice.</p>
+                    <div class="project-tech">
+                        <span>Docker</span><span>PHP</span><span>Virtual Lab</span><span>Security Training</span>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="section contact-section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <div class="section-divider"></div>
-                <p class="section-subtitle">Ready to collaborate or discuss cybersecurity? Let's connect!</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-form-container">
-                    <form class="contact-form" id="contact-form">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                            <span class="error-message" id="name-error"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                            <span class="error-message" id="email-error"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                            <span class="error-message" id="message-error"></span>
-                        </div>
-                        <button type="submit" class="submit-btn">
-                            <span>Send Message</span>
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
-                </div>
+            <div class="section-label">04 — Contact</div>
+            <h2 class="section-title">Let's work together</h2>
+            <div class="contact-grid">
                 <div class="contact-info">
-    <div class="contact-item">
-        <div class="contact-icon">
-            <i class="fas fa-envelope"></i>
-        </div>
-        <div class="contact-details">
-            <h4>Email</h4>
-            <a href="mailto:vigneshg0624@gmail.com" class="contact-link">
-                <p>vigneshg0624@gmail.com</p>
-            </a>
-        </div>
-    </div>
+                    <p class="contact-desc">Whether you need a high-performance web application, a security audit, or a
+                        penetration test — I'm here to help. Let's build something great together.</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value"><a href="mailto:vigneshg0624@gmail.com"
+                                        style="color:inherit;text-decoration:none">vigneshg0624@gmail.com</a></div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="contact-label">Website</div>
+                                <div class="contact-value"><a href="https://vignesh.zeal.ninja" target="_blank"
+                                        style="color:var(--acc2);text-decoration:none">vignesh.zeal.ninja</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/vigneshcode06" target="_blank" class="social-btn" title="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                            GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/vigneshcode" target="_blank" class="social-btn"
+                            title="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                            LinkedIn
+                        </a>
+                        <a href="https://www.instagram.com/vigneshvibes" target="_blank" class="social-btn"
+                            title="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                            Instagram
+                        </a>
+                    </div>
+                </div>
 
-    <div class="contact-item">
-        <div class="contact-icon">
-            <i class="fab fa-instagram"></i>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="John Doe" autocomplete="name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="john@example.com" autocomplete="email" />
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject">
+                            <option value="">Select a service...</option>
+                            <option>Web Development</option>
+                            <option>Security Audit</option>
+                            <option>Penetration Testing</option>
+                            <option>Consulting</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="4" placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Send Message</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13" />
+                            <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                        </svg>
+                    </button>
+                    <div class="form-success" id="form-success">✅ Message sent! I'll get back to you soon.</div>
+                </form>
+            </div>
         </div>
-
-
-
-        
-         <div class="contact-details">
-            <h4>Instagram</h4>
-            <a href="https://www.instagram.com/vigneshvibes" class="contact-link">
-                <p>vigneshvibes</p>
-            </a>
-        </div>
-    </div>
-    <div class="contact-item">
-        <div class="contact-icon">
-            <i class="fab fa-linkedin"></i>
-        </div>
-        <div class="contact-details">
-            <h4>LinkedIn</h4>
-            <a href="https://www.linkedin.com/in/vigneshcode" target="_blank" class="contact-link">
-                <p>www.linkedin.com/in/vigneshcode</p>
-            </a>
-        </div>
-    </div>
-    <div class="contact-item">
-        <div class="contact-icon">
-            <i class="fab fa-github"></i>
-        </div>
-        <div class="contact-details">
-            <h4>GitHub</h4>
-            <a href="https://github.com/vigneshcode06" target="_blank" class="contact-link">
-                <p>https://github.com/vigneshcode06</p>
-            </a>
-        </div>
-    </div>
-</div>
-
+    </section>
 
     <!-- Footer -->
-    
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-name">Vignesh Hacker</span>
+                <span class="logo-slash">/</span>
+                <span class="logo-bracket">&gt;</span>
+            </div>
+            <p class="footer-copy">© 2023 Vignesh Hacker. Ethical Hacker &amp; Web Developer. Built with ❤️ &amp;
+                secured by design.</p>
+            <div class="footer-back">
+                <a href="#hero" class="back-top" id="back-top" title="Back to top">↑</a>
+            </div>
+        </div>
+    </footer>
 
-    <!-- JavaScript -->
+    <!-- Three.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
     <script src="assets/script.js"></script>
 </body>
+
 </html>
-
-
-
