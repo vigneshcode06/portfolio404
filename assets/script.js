@@ -186,36 +186,6 @@
 })();
 
 
-// ===== ROLE TEXT ROTATOR =====
-(function initRoleRotator() {
-  const el = document.getElementById('role-rotator');
-  if (!el) return;
-  const roles = [
-    'Secure Web Apps',
-    'Ethical Hacking',
-    'Penetration Tests',
-    'Bug Bounty Hunting',
-    'Security Research',
-    'Full-Stack Tools',
-  ];
-  let i = 0, charI = 0, deleting = false, paused = false;
-
-  function tick() {
-    if (paused) return;
-    const target = roles[i];
-    if (!deleting) {
-      el.textContent = target.slice(0, ++charI);
-      if (charI === target.length) { deleting = true; paused = true; setTimeout(() => { paused = false; }, 2000); }
-      setTimeout(tick, 65);
-    } else {
-      el.textContent = target.slice(0, --charI);
-      if (charI === 0) { deleting = false; i = (i + 1) % roles.length; }
-      setTimeout(tick, 35);
-    }
-  }
-  tick();
-})();
-
 
 // ===== INTERSECTION OBSERVER — SKILL CARDS =====
 (function initSkillObserver() {
